@@ -26,5 +26,10 @@ namespace Accounting_System
         {
 
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

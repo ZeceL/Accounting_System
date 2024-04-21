@@ -64,7 +64,7 @@
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(777, 398);
+            tabPage2.Size = new Size(791, 422);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
@@ -74,7 +74,7 @@
             tabPage3.Location = new Point(4, 24);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(777, 398);
+            tabPage3.Size = new Size(791, 422);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "tabPage3";
             tabPage3.UseVisualStyleBackColor = true;
@@ -84,7 +84,7 @@
             tabPage4.Location = new Point(4, 24);
             tabPage4.Name = "tabPage4";
             tabPage4.Padding = new Padding(3);
-            tabPage4.Size = new Size(777, 398);
+            tabPage4.Size = new Size(791, 422);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "tabPage4";
             tabPage4.UseVisualStyleBackColor = true;
@@ -98,6 +98,7 @@
             Controls.Add(tabControl1);
             Name = "Form2";
             Text = "Form2";
+            Load += Form2_Load;
             tabControl1.ResumeLayout(false);
             ResumeLayout(false);
         }
