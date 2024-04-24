@@ -10,26 +10,11 @@ using System.Windows.Forms;
 
 namespace Accounting_System
 {
-    public partial class Form2 : Form
+    public partial class Order_Manager_Main_Form : Form
     {
-        public Form2()
+        public Order_Manager_Main_Form()
         {
             InitializeComponent();
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

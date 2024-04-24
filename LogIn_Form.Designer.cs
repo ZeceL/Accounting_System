@@ -1,6 +1,6 @@
 ﻿namespace Accounting_System
 {
-    partial class Form1
+    partial class LogIn_Form
     {
         /// <summary>
         ///  Required designer variable.
@@ -33,10 +33,11 @@
             label3 = new Label();
             User_login = new TextBox();
             User_password = new TextBox();
-            button1 = new Button();
+            Login_Button = new Button();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             Close_Button = new Label();
+            Show_Password_Button = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -88,30 +89,31 @@
             User_password.Cursor = Cursors.IBeam;
             User_password.Font = new Font("Tahoma", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
             User_password.Location = new Point(334, 314);
+            User_password.MaxLength = 8;
             User_password.Name = "User_password";
             User_password.Size = new Size(432, 52);
             User_password.TabIndex = 4;
             User_password.UseSystemPasswordChar = true;
             // 
-            // button1
+            // Login_Button
             // 
-            button1.AutoSize = true;
-            button1.BackColor = SystemColors.ButtonHighlight;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderColor = Color.Turquoise;
-            button1.FlatAppearance.BorderSize = 3;
-            button1.FlatAppearance.MouseDownBackColor = Color.Turquoise;
-            button1.FlatAppearance.MouseOverBackColor = Color.White;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Tahoma", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = SystemColors.ControlText;
-            button1.Location = new Point(429, 430);
-            button1.Name = "button1";
-            button1.Size = new Size(191, 74);
-            button1.TabIndex = 5;
-            button1.Text = "Войти";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            Login_Button.AutoSize = true;
+            Login_Button.BackColor = SystemColors.ButtonHighlight;
+            Login_Button.Cursor = Cursors.Hand;
+            Login_Button.FlatAppearance.BorderColor = Color.Turquoise;
+            Login_Button.FlatAppearance.BorderSize = 3;
+            Login_Button.FlatAppearance.MouseDownBackColor = Color.Turquoise;
+            Login_Button.FlatAppearance.MouseOverBackColor = Color.White;
+            Login_Button.FlatStyle = FlatStyle.Flat;
+            Login_Button.Font = new Font("Tahoma", 36F, FontStyle.Bold, GraphicsUnit.Point);
+            Login_Button.ForeColor = SystemColors.ControlText;
+            Login_Button.Location = new Point(429, 430);
+            Login_Button.Name = "Login_Button";
+            Login_Button.Size = new Size(191, 74);
+            Login_Button.TabIndex = 5;
+            Login_Button.Text = "Войти";
+            Login_Button.UseVisualStyleBackColor = false;
+            Login_Button.Click += Login_Button_Click;
             // 
             // pictureBox1
             // 
@@ -148,23 +150,36 @@
             Close_Button.MouseEnter += Close_Button_MouseEnter;
             Close_Button.MouseLeave += Close_Button_MouseLeave;
             // 
-            // Form1
+            // Show_Password_Button
+            // 
+            Show_Password_Button.BackgroundImage = Properties.Resources.Eye_icon;
+            Show_Password_Button.BackgroundImageLayout = ImageLayout.Stretch;
+            Show_Password_Button.Location = new Point(713, 314);
+            Show_Password_Button.Name = "Show_Password_Button";
+            Show_Password_Button.Size = new Size(53, 52);
+            Show_Password_Button.TabIndex = 9;
+            Show_Password_Button.UseVisualStyleBackColor = true;
+            Show_Password_Button.MouseDown += Show_Password_Button_MouseDown;
+            Show_Password_Button.MouseUp += Show_Password_Button_MouseUp;
+            // 
+            // LogIn_Form
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1138, 678);
+            Controls.Add(Show_Password_Button);
             Controls.Add(Close_Button);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Controls.Add(button1);
+            Controls.Add(Login_Button);
             Controls.Add(User_password);
             Controls.Add(User_login);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
+            Name = "LogIn_Form";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login_Form";
             Load += Form1_Load;
@@ -181,9 +196,10 @@
         private Label label3;
         private TextBox User_login;
         private TextBox User_password;
-        private Button button1;
+        private Button Login_Button;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Label Close_Button;
+        private Button Show_Password_Button;
     }
 }
