@@ -182,6 +182,7 @@
             Name = "LogIn_Form";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login_Form";
+            FormClosed += LogIn_Form_FormClosed;
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

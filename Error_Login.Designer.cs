@@ -37,7 +37,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(116, 83);
+            label1.Location = new Point(112, 69);
             label1.Name = "label1";
             label1.Size = new Size(223, 29);
             label1.TabIndex = 0;
@@ -56,7 +56,7 @@
             // Close_Button
             // 
             Close_Button.Font = new Font("Tahoma", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            Close_Button.Location = new Point(183, 154);
+            Close_Button.Location = new Point(183, 136);
             Close_Button.Name = "Close_Button";
             Close_Button.Size = new Size(97, 40);
             Close_Button.TabIndex = 2;

@@ -37,26 +37,30 @@ namespace Accounting_System
             User_password.UseSystemPasswordChar = true;
         }
 
+        private void LogIn_Form_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
         private void Login_Button_Click(object sender, EventArgs e)
         {
-            string Alex_Password = "12345678";
+            string Alex_Password = "1";
             switch (User_login.Text)
             {
-                case "Alex":
+                case "1":
                     if (User_password.Text.Contains(Alex_Password))
                     {
-                        Order_Manager_Main_Form form2 = new Order_Manager_Main_Form();
+                        Order_Manager_Main_Form form2 = new();
                         this.Hide();
                         form2.ShowDialog();
                     }
                     else
                     {
-                        Error_Password error_Password1 = new Error_Password();
+                        Error_Password error_Password1 = new();
                         error_Password1.ShowDialog();
                     }
                     break;
                 default:
-                    Error_Login error_Password = new Error_Login();
+                    Error_Login error_Password = new();
                     error_Password.ShowDialog();
                     break;
             }
